@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "time-counter",
-    "description": "This project is really great.",
+    "description": "Reactivity game 1VS1.",
     "slug": "time-counter",
     "privacy": "public",
     "sdkVersion": "30.0.0",
