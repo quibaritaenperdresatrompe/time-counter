@@ -1,18 +1,8 @@
-import { StyleSheet, Text } from 'react-native';
+import { Text } from 'react-native';
 import { toUpper } from 'ramda';
 import React, { PureComponent } from 'react';
 
-const styles = StyleSheet.create({
-  title: {
-    backgroundColor: '#4A9EE6',
-    color: 'white',
-    fontSize: 40,
-    marginTop: 100,
-    padding: 20,
-    textAlign: 'center',
-    width: '100%',
-  },
-});
+import styles from './styles';
 
 class Title extends PureComponent {
   render() {

@@ -1,20 +1,20 @@
-import { View } from 'react-native';
 import React, { PureComponent } from 'react';
 
 import Background from './Background';
-import Title from './Title';
 import Button from './HomeButton';
+import Menu from './Menu';
+import Title from './Title';
 
 export default class TimeCounter extends PureComponent {
   render() {
     return (
       <Background>
         <Title text="Time Counter" />
-        <View>
+        <Menu>
           <Button title="New game" />
           <Button title="Leaderboard" />
           <Button title="Settings" />
-        </View>
+        </Menu>
       </Background>
     );
   }
