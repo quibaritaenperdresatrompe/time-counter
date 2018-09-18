@@ -1,4 +1,5 @@
 import { StyleSheet, Text } from 'react-native';
+import { toUpper } from 'ramda';
 import React, { PureComponent } from 'react';
 
 const styles = StyleSheet.create({
@@ -17,7 +18,7 @@ class Title extends PureComponent {
   render() {
     const { text } = this.props;
 
-    return <Text style={styles.title}>{text}</Text>;
+    return <Text style={styles.title}>{toUpper(text)}</Text>;
   }
 }
 
