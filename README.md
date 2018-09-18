@@ -6,18 +6,18 @@ Reactivity game 1VS1.
 
 ### Home
 
-![Home](https://i.imgur.com/cYR2O3R.png)
+![Home](/docs/Home.png)
 
 ### Settings
 
-![Settings](https://i.imgur.com/TBgDPHf.png)
+![Settings](/docs/Settings.png)
 
 ### Leaderboard
 
-![Leaderboard](https://i.imgur.com/Lr94SJj.png)
+![Leaderboard](/docs/Leaderboard.png)
 
 ### Game
 
-![Game 1](https://i.imgur.com/WAF5NAH.png)
-![Game 2](https://i.imgur.com/EWpFweX.png)
-![Game 3](https://i.imgur.com/rCOsfvy.png)
+![Game - Intro](/docs/GameIntro.png)
+![Gamer](/docs/Gamer.png)
+![Gamer - Results](/docs/GamerResults.png)
