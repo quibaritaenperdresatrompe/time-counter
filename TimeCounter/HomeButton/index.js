@@ -1,16 +1,20 @@
 import { Button } from 'react-native-elements';
+import { Dimensions, StyleSheet } from 'react-native';
 import { toUpper } from 'ramda';
 import React from 'react';
 
+const { width } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  button: {
+    borderRadius: 5,
+    backgroundColor: '#524a60',
+    marginBottom: 20,
+    marginTop: 20,
+    width: (width * 2) / 3,
+  },
+});
+
 export default ({ title }) => (
-  <Button
-    title={toUpper(title)}
-    buttonStyle={{
-      backgroundColor: '#524960',
-      borderRadius: 5,
-      color: 'white',
-      marginBottom: 20,
-      marginTop: 20,
-    }}
-  />
+  <Button title={toUpper(title)} buttonStyle={styles.button} fontSize={28} />
 );
