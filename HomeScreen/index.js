@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 
-import { Leaderboard, NewGame, Settings } from '../RootNavigation';
+import { Leaderboard, NewGame, Settings } from '../routing';
 import Background from '../ui/Background';
 import Button from '../ui/HomeButton';
 import Menu from './Menu';

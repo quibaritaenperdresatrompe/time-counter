@@ -3,19 +3,15 @@ import { Image } from 'react-native';
 import React from 'react';
 
 import { black, white } from '../ui/colors';
+import { Home, Leaderboard, NewGame, Settings } from '../routing';
 import BackIcon from '../assets/back-icon.png';
 import HeaderTitle from '../ui/HeaderTitle';
 import HomeScreen from '../HomeScreen';
 import LeaderboardScreen from '../LeaderboardScreen';
 import NewGameScreen from '../NewGameScreen';
-import SettingsScreen from '../SettingsScreen';
+import SettingsNavigation from '../SettingsNavigation';
 
-export const Home = 'Home';
-export const Leaderboard = 'Leaderboard';
-export const NewGame = 'New Game';
-export const Settings = 'Settings';
-
-const RootNavigation = createStackNavigator(
+export default createStackNavigator(
   {
     [Home]: {
       screen: HomeScreen,
@@ -30,7 +26,7 @@ const RootNavigation = createStackNavigator(
       screen: NewGameScreen,
     },
     [Settings]: {
-      screen: SettingsScreen,
+      screen: SettingsNavigation,
     },
   },
   {
@@ -46,5 +42,3 @@ const RootNavigation = createStackNavigator(
     },
   },
 );
-
-export default RootNavigation;
