@@ -6,13 +6,18 @@ import SettingsScreen from '../SettingsScreen';
 export const Home = 'Home';
 export const Settings = 'Settings';
 
-const RootNavigation = createStackNavigator({
-  [Home]: {
-    screen: HomeScreen,
+const RootNavigation = createStackNavigator(
+  {
+    [Home]: {
+      screen: HomeScreen,
+    },
+    [Settings]: {
+      screen: SettingsScreen,
+    },
   },
-  [Settings]: {
-    screen: SettingsScreen,
+  {
+    initialRouteName: Home,
   },
-});
+);
 
 export default RootNavigation;
