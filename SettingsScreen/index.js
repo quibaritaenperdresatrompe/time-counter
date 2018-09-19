@@ -2,7 +2,7 @@ import { Platform, Text, View } from 'react-native';
 import React, { PureComponent } from 'react';
 
 import Background from '../ui/Background';
-import capitalize from '../lib/capitalize';
+import OsName from './OsName/index.android';
 import styles from './styles';
 
 export default class SettingsScreen extends PureComponent {
@@ -10,7 +10,7 @@ export default class SettingsScreen extends PureComponent {
     return (
       <Background>
         <View style={styles.wrapper}>
-          <Text style={styles.osName}>{capitalize(Platform.OS)}</Text>
+          <OsName />
           <Text style={styles.osVersion}>{`v${Platform.Version}`}</Text>
         </View>
       </Background>
