@@ -22,10 +22,15 @@ export default class LeaderboardScreen extends PureComponent {
         const scores = response;
         const sortedScores = scores.sort((a, b) => b.score - a.score);
         const padLength = sortedScores.length.toString().length;
-        const parsedScores = sortedScores.map((score, index) => ({
-          ...score,
-          rank: pad(index + 1, padLength),
-        }));
+        const parsedScores = sortedScores.map((score, index) => {
+          const rank = index + 1;
+          const displayedRank = pad(rank, padLength);
+          return {
+            ...score,
+            rank,
+            displayedRank,
+          };
+        });
 
         this.setState(() => ({
           scores: parsedScores,
