@@ -1,8 +1,9 @@
 import { FlatList, View } from 'react-native';
 import React, { PureComponent } from 'react';
 
-import Score from './Score';
 import Background from '../ui/Background';
+import pad from '../lib/pad';
+import Score from './Score';
 import styles from './styles';
 
 export default class LeaderboardScreen extends PureComponent {
@@ -18,12 +19,16 @@ export default class LeaderboardScreen extends PureComponent {
     fetch('https://time-counter-api.herokuapp.com/leaderboard')
       .then(response => response.json())
       .then(response => {
-        const scores = response
-          .sort((a, b) => b.score - a.score)
-          .map((score, index) => ({ ...score, rank: index + 1 }));
+        const scores = response;
+        const sortedScores = scores.sort((a, b) => b.score - a.score);
+        const padLength = sortedScores.length.toString().length;
+        const parsedScores = sortedScores.map((score, index) => ({
+          ...score,
+          rank: pad(index + 1, padLength),
+        }));
 
         this.setState(() => ({
-          scores,
+          scores: parsedScores,
         }));
       });
   }
