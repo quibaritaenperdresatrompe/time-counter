@@ -1,0 +1,10 @@
+{
+  "extends": ["plugin:react-native/all"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": ["react-native"],
+  "root": true
+}
