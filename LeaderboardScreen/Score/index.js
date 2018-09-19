@@ -1,41 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native';
-import React, { PureComponent } from 'react';
-import { white, blue } from '../../ui/colors';
+import { Text, View } from 'react-native';
+import React from 'react';
 
-const styles = StyleSheet.create({
-  wrapper: {
-    flex: 1,
-    justifyContent: 'space-around',
-    backgroundColor: blue,
-    flexDirection: 'row',
-    padding: 15,
-  },
-  mainWrapper: {
-    backgroundColor: 'red',
-  },
-  text: {
-    fontWeight: '700',
-    fontSize: 20,
-    color: white,
-  },
-  leftText: {
-    textAlign: 'left',
-  },
-  rightText: {
-    textAlign: 'right',
-  },
-});
+import styles from './styles';
 
-export default class Score extends PureComponent {
-  render() {
-    const { username, rank, score } = this.props;
-
-    return (
-      <View style={[styles.wrapper, rank === 1 && styles.mainWrapper]}>
-        <Text style={[styles.text, styles.leftText]}>{rank}</Text>
-        <Text style={[styles.text, styles.leftText]}>{username}</Text>
-        <Text style={[styles.text, styles.rightText]}>{score}</Text>
-      </View>
-    );
-  }
-}
+export default ({ username, rank, score }) => (
+  <View style={[styles.wrapper, rank === 1 && styles.mainWrapper]}>
+    <Text style={[styles.text, styles.rank]}>{rank}</Text>
+    <Text style={[styles.text, styles.username]}>{username}</Text>
+    <Text style={[styles.text, styles.score]}>{score}</Text>
+  </View>
+);

@@ -3,7 +3,7 @@ import React, { PureComponent } from 'react';
 
 import Score from './Score';
 import Background from '../ui/Background';
-import { yellow } from '../ui/colors';
+import styles from './styles';
 
 export default class LeaderboardScreen extends PureComponent {
   constructor() {
@@ -32,17 +32,17 @@ export default class LeaderboardScreen extends PureComponent {
 
   renderScore = ({ item }) => <Score {...item} />;
 
+  renderSeparator = () => <View style={styles.separator} />;
+
   render() {
     const { scores } = this.state;
 
     return (
-      <Background>
+      <Background dark>
         <FlatList
           data={scores}
           keyExtractor={this.scoreKeyExtractor}
-          ItemSeparatorComponent={() => (
-            <View style={{ backgroundColor: yellow, height: 20 }} />
-          )}
+          ItemSeparatorComponent={this.renderSeparator}
           renderItem={this.renderScore}
         />
       </Background>

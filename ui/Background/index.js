@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 import React, { Component } from 'react';
 
-import { yellow } from '../colors';
+import { black, yellow } from '../colors';
 
 const styles = StyleSheet.create({
   background: {
@@ -9,13 +9,20 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '100%',
   },
+  darkBackground: {
+    backgroundColor: black,
+  },
 });
 
 class Background extends Component {
   render() {
-    const { children } = this.props;
+    const { children, dark } = this.props;
 
-    return <View style={styles.background}>{children}</View>;
+    return (
+      <View style={[styles.background, dark && styles.darkBackground]}>
+        {children}
+      </View>
+    );
   }
 }
 
