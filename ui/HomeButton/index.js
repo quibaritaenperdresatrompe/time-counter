@@ -15,6 +15,11 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ({ title }) => (
-  <Button title={toUpper(title)} buttonStyle={styles.button} fontSize={28} />
+export default ({ onPress, title }) => (
+  <Button
+    title={toUpper(title)}
+    buttonStyle={styles.button}
+    fontSize={28}
+    onPress={onPress}
+  />
 );

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import TimeCounter from './TimeCounter';
+import RootNavigation from './RootNavigation';
 
 export default class App extends Component {
   render() {
-    return <TimeCounter />;
+    return <RootNavigation />;
   }
 }
