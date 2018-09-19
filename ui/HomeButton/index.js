@@ -3,12 +3,14 @@ import { Dimensions, StyleSheet } from 'react-native';
 import { toUpper } from 'ramda';
 import React from 'react';
 
+import { black } from '../colors';
+
 const { width } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   button: {
     borderRadius: 5,
-    backgroundColor: '#524a60',
+    backgroundColor: black,
     marginBottom: 10,
     marginTop: 10,
     width: (width * 2) / 3,
