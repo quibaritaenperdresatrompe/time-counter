@@ -1,7 +1,7 @@
 import { Platform, Text, View } from 'react-native';
 import React, { PureComponent } from 'react';
 
-import Background from '../ui/Background';
+import Background from '../../ui/Background';
 import OsName from './OsName/index.android';
 import styles from './styles';
 

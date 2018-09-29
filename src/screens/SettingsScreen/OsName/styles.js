@@ -1,5 +1,6 @@
 import { Platform, StyleSheet } from 'react-native';
-import { black, blue } from '../../ui/colors';
+
+import { black, blue } from '../../../ui/colors';
 
 const textColor = Platform.select({
   ios: {

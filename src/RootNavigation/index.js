@@ -11,9 +11,9 @@ import {
 } from '../config/routes';
 import BackIcon from '../assets/back-icon.png';
 import HeaderTitle from '../ui/HeaderTitle';
-import HomeScreen from '../HomeScreen';
-import LeaderboardScreen from '../LeaderboardScreen';
-import NewGameScreen from '../NewGameScreen';
+import HomeScreen from '../screens/HomeScreen';
+import LeaderboardScreen from '../screens/LeaderboardScreen';
+import NewGameScreen from '../screens/NewGameScreen';
 import SettingsNavigation from '../SettingsNavigation';
 
 export default createStackNavigator(

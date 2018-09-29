@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { black } from '../ui/colors';
+import { black } from '../../ui/colors';
 
 export default StyleSheet.create({
   osVersion: {

@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { blue, white } from '../../ui/colors';
+import { blue, white } from '../../../ui/colors';
 
 export default StyleSheet.create({
   wrapper: {

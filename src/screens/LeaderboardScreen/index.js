@@ -1,8 +1,8 @@
 import { FlatList, View } from 'react-native';
 import React, { PureComponent } from 'react';
 
-import Background from '../ui/Background';
-import pad from '../lib/pad';
+import Background from '../../ui/Background';
+import pad from '../../lib/pad';
 import Score from './Score';
 import styles from './styles';
 
