@@ -3,7 +3,7 @@ import { Image } from 'react-native';
 import React from 'react';
 
 import { black, white } from '../ui/colors';
-import { Home, Leaderboard, NewGame, Settings } from '../routing';
+import { Home, Leaderboard, NewGame, Settings } from '../config/routes';
 import BackIcon from '../assets/back-icon.png';
 import HeaderTitle from '../ui/HeaderTitle';
 import HomeScreen from '../HomeScreen';
