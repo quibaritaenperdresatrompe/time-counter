@@ -1,6 +1,6 @@
-# Time Counter
+# Time Counter 🕹️
 
-Reactivity game 1VS1.
+Reactivity game 1vs1.
 
 ## Getting started
 
@@ -12,6 +12,6 @@ To install dependencies run `yarn`.
 
 To start the app with [Expo](https://docs.expo.io/versions/latest/) run `yarn start`.
 
-## Contribution
+### Contribution
 
 Use the command `yarn commit` to create nice commit messages with [the commitizen command line utility](http://commitizen.github.io/cz-cli/).
