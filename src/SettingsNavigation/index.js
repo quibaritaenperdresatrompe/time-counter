@@ -1,7 +1,7 @@
 import { createMaterialTopTabNavigator } from 'react-navigation';
 
 import { black, yellow } from '../ui/colors';
-import { SettingsNative, SettingsWeb } from '../routing';
+import { SettingsNative, SettingsWeb } from '../config/routes';
 import SettingsScreen from '../SettingsScreen';
 import WebSettingsScreen from '../WebSettingsScreen';
 
