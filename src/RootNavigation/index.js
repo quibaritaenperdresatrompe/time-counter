@@ -3,7 +3,12 @@ import { Image } from 'react-native';
 import React from 'react';
 
 import { black, white } from '../ui/colors';
-import { Home, Leaderboard, NewGame, Settings } from '../config/routes';
+import {
+  HOME_ROUTE,
+  LEADERBOARD_ROUTE,
+  NEW_GAME_ROUTE,
+  SETTINGS_ROUTE,
+} from '../config/routes';
 import BackIcon from '../assets/back-icon.png';
 import HeaderTitle from '../ui/HeaderTitle';
 import HomeScreen from '../HomeScreen';
@@ -13,24 +18,24 @@ import SettingsNavigation from '../SettingsNavigation';
 
 export default createStackNavigator(
   {
-    [Home]: {
+    [HOME_ROUTE]: {
       screen: HomeScreen,
       navigationOptions: {
         header: null,
       },
     },
-    [Leaderboard]: {
+    [LEADERBOARD_ROUTE]: {
       screen: LeaderboardScreen,
     },
-    [NewGame]: {
+    [NEW_GAME_ROUTE]: {
       screen: NewGameScreen,
     },
-    [Settings]: {
+    [SETTINGS_ROUTE]: {
       screen: SettingsNavigation,
     },
   },
   {
-    initialRouteName: Home,
+    initialRouteName: HOME_ROUTE,
     navigationOptions: {
       headerStyle: {
         backgroundColor: black,

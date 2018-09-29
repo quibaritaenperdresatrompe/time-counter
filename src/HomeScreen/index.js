@@ -1,15 +1,19 @@
 import React, { PureComponent } from 'react';
 
-import { Leaderboard, NewGame, Settings } from '../config/routes';
+import {
+  LEADERBOARD_ROUTE,
+  NEW_GAME_ROUTE,
+  SETTINGS_ROUTE,
+} from '../config/routes';
 import Background from '../ui/Background';
 import Button from '../ui/HomeButton';
 import Menu from './Menu';
 import Title from './Title';
 
 export default class HomeScreen extends PureComponent {
-  handleButtonPress = screen => () => {
+  handleButtonPress = route => () => {
     const { navigation } = this.props;
-    navigation.navigate(screen);
+    navigation.navigate(route);
   };
 
   render() {
@@ -17,12 +21,18 @@ export default class HomeScreen extends PureComponent {
       <Background>
         <Title text="Time Counter" />
         <Menu>
-          <Button title="New game" onPress={this.handleButtonPress(NewGame)} />
+          <Button
+            title="New game"
+            onPress={this.handleButtonPress(NEW_GAME_ROUTE)}
+          />
           <Button
             title="Leaderboard"
-            onPress={this.handleButtonPress(Leaderboard)}
+            onPress={this.handleButtonPress(LEADERBOARD_ROUTE)}
           />
-          <Button title="Settings" onPress={this.handleButtonPress(Settings)} />
+          <Button
+            title="Settings"
+            onPress={this.handleButtonPress(SETTINGS_ROUTE)}
+          />
         </Menu>
       </Background>
     );

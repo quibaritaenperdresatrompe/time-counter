@@ -1,6 +1,6 @@
-export const Home = 'Home';
-export const Leaderboard = 'Leaderboard';
-export const NewGame = 'New Game';
-export const Settings = 'Settings';
-export const SettingsNative = 'Settings.Native';
-export const SettingsWeb = 'Settings.Web';
+export const HOME_ROUTE = 'HOME';
+export const LEADERBOARD_ROUTE = 'LEADERBOARD';
+export const NEW_GAME_ROUTE = 'NEW_GAME';
+export const SETTINGS_ROUTE = 'SETTINGS';
+export const SETTINGS_NATIVE_ROUTE = 'SETTINGS_NATIVE';
+export const SETTINGS_WEB_ROUTE = 'SETTINGS_WEB';
