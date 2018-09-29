@@ -1,13 +1,13 @@
 {
-  "name": "empty-project-template",
+  "name": "time-counter",
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
-    "start": "expo start",
     "android": "expo start --android",
+    "commit": "git-cz",
     "ios": "expo start --ios",
-    "eject": "expo eject",
-    "lint": "eslint --cache ."
+    "lint": "eslint --cache .",
+    "start": "expo start"
   },
   "dependencies": {
     "expo": "^30.0.1",
@@ -20,7 +20,14 @@
   "devDependencies": {
     "babel-eslint": "^9.0.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.6.0",
     "eslint-plugin-react-native": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
