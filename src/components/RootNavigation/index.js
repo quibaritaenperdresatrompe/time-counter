@@ -2,18 +2,18 @@ import { createStackNavigator } from 'react-navigation';
 import { Image } from 'react-native';
 import React from 'react';
 
-import { black, white } from '../ui/colors';
+import { black, white } from '../../ui/colors';
 import {
   HOME_ROUTE,
   LEADERBOARD_ROUTE,
   NEW_GAME_ROUTE,
   SETTINGS_ROUTE,
-} from '../config/routes';
-import BackIcon from '../assets/back-icon.png';
-import HeaderTitle from '../ui/HeaderTitle';
-import HomeScreen from '../screens/HomeScreen';
-import LeaderboardScreen from '../screens/LeaderboardScreen';
-import NewGameScreen from '../screens/NewGameScreen';
+} from '../../config/routes';
+import BackIcon from '../../assets/back-icon.png';
+import HeaderTitle from '../../ui/HeaderTitle';
+import HomeScreen from '../../screens/HomeScreen';
+import LeaderboardScreen from '../../screens/LeaderboardScreen';
+import NewGameScreen from '../../screens/NewGameScreen';
 import SettingsNavigation from '../SettingsNavigation';
 
 export default createStackNavigator(
