@@ -18,11 +18,7 @@ class Background extends Component {
   render() {
     const { children, dark } = this.props;
 
-    return (
-      <View style={[styles.background, dark && styles.darkBackground]}>
-        {children}
-      </View>
-    );
+    return <View style={[styles.background, dark && styles.darkBackground]}>{children}</View>;
   }
 }
 

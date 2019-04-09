@@ -3,12 +3,7 @@ import { Image } from 'react-native';
 import React from 'react';
 
 import { black, white } from '../../ui/colors';
-import {
-  HOME_ROUTE,
-  LEADERBOARD_ROUTE,
-  NEW_GAME_ROUTE,
-  SETTINGS_ROUTE,
-} from '../../config/routes';
+import { HOME_ROUTE, LEADERBOARD_ROUTE, NEW_GAME_ROUTE, SETTINGS_ROUTE } from '../../config/routes';
 import BackIcon from '../../assets/back-icon.png';
 import HeaderTitle from '../../ui/HeaderTitle';
 import HomeScreen from '../../screens/HomeScreen';
