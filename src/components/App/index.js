@@ -1,5 +1,5 @@
-import React from 'react';
+import { createAppContainer } from 'react-navigation';
 
 import RootNavigation from '../RootNavigation';
 
-export default () => <RootNavigation />;
+export default createAppContainer(RootNavigation);

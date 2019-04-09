@@ -31,7 +31,7 @@ export default createStackNavigator(
   },
   {
     initialRouteName: HOME_ROUTE,
-    navigationOptions: {
+    defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: black,
         height: 80,
